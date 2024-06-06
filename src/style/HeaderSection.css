@@ -1,0 +1,99 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1f20; 
+    margin-top: 70px;
+    width: 200%;
+  }
+  
+  h1 {
+    font-family: "Inconsolata", Consolas, monospace;
+    font-size: 4em;
+    color: #d7b94c;
+  }
+  
+  .typewriter {
+    position: relative;
+  } */
+  
+
+
+
+.header{
+    background: #364155;
+    height:660px;
+    color: #fff;
+    overflow: hidden;
+    
+}
+
+.header .container {
+    display: flex;
+}
+
+.header .container div{
+    width: 50%;
+}
+
+.header .first{
+    position: relative;
+    margin-top: 200px;
+}
+
+.header .first:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height:10%; 
+    width:1px;
+    background: #08aac9;
+}
+
+.header .first .box{
+    position: relative;
+    width: 100%;
+    padding-left: 80px;
+}
+
+.header .first.box:hover{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 98%;
+    width: 1px;
+    background:rgba(255,255,255,0.38) ;
+
+}
+
+.typewriter::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: #364155;
+    width: 100%;
+    animation: typing 3s steps(14) alternate infinite,
+                line 1s infinite;
+  }
+  
+  @keyframes typing {
+    to {
+      width: 0%;
+    }
+  }
+  
+  @keyframes line {
+    50% {
+      color: transparent;
+    }
+  }
+  
